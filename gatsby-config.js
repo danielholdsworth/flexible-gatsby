@@ -14,6 +14,12 @@ module.exports = {
   },
   plugins: [
     {
+            resolve: '@mkitio/gatsby-theme-password-protect',
+            options: {
+              password: 'test' // delete or `undefined` to disable password protection
+            },
+        },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
